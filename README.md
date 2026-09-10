@@ -1,42 +1,42 @@
-## 🏇 Knight's Travails
+## Knight's Travails
 
-A JavaScript implementation of the classic *Knight's Travails* problem using **graph traversal (BFS)** to determine the shortest path a knight can take on a standard 8x8 chessboard from a source position to a target position.
-
----
-
-### 📌 Project Description
-
-The Knight’s Travails challenge involves finding the **minimum number of moves** a knight must make to travel from one square to another on a chessboard. This project:
-
-- Represents the board as an **implicit graph**.
-- Calculates valid knight moves from any square.
-- Uses **Breadth-First Search (BFS)** to ensure the shortest path is found.
-- Tracks visited positions to avoid cycles.
-- Backtraces the path using **parent pointers** to reconstruct the full route.
+This project is a JavaScript implementation of the classic Knight's Travails problem. It uses breadth-first search to compute the shortest possible route a knight can take on a standard 8x8 chessboard from one square to another.
 
 ---
 
-### 📁 Features
+### Project Description
 
-- Input validation (out-of-bounds and same-point checks)
-- Dynamic neighbor generation based on knight movement rules
-- Efficient memory usage by avoiding duplicate visits
-- Clean path reconstruction from target to source
-- Simple console output with path and move count
+The Knight's Travails challenge is about finding the minimum number of moves required for a knight to travel from a starting square to a target square. This project:
+
+- Models the board as an implicit graph.
+- Generates valid knight moves for any square.
+- Uses breadth-first search to guarantee the shortest path.
+- Tracks visited positions to prevent revisiting nodes.
+- Reconstructs the full route using parent pointers.
 
 ---
 
-### 🧠 Concepts Applied
+### Features
 
-- Graph traversal (Breadth-First Search)
+- Validates input for out-of-bounds positions and identical starting and ending squares.
+- Generates neighboring squares according to standard knight movement rules.
+- Uses efficient queue-based traversal to minimize unnecessary work.
+- Reconstructs a path cleanly from the target back to the source.
+- Prints the final route and total number of moves in a simple format.
+
+---
+
+### Concepts Applied
+
+- Graph traversal with breadth-first search
 - Implicit graph modeling
 - Queue-based algorithm design
-- Position encoding (for path tracing)
-- Defensive programming with input checks
+- Position encoding for path reconstruction
+- Defensive programming through input validation
 
 ---
 
-### ✅ Usage
+### Usage
 
 To use this logic in a script:
 
